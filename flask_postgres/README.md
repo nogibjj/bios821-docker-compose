@@ -1,0 +1,1 @@
+This <code>flask_postgres/</code> example is taken from https://www.tinystacks.com/blog-post/flask-crud-api-with-postgres/. You can find the original code at https://github.com/tinystacks/aws-docker-templates-flask/tree/flask-local-postgres. 

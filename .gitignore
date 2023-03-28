@@ -1,0 +1,4 @@
+flask_model/docker-compose-final.yml
+flask_model/flask/Dockerfile-final
+flask_model/model/Dockerfile-final
+.idea/

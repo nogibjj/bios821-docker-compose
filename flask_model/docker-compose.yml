@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  db:
+    # ADD HERE
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  modelapp:
+    # ADD HERE
+  flaskapp:
+    # ADD HERE
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres
+      - MODEL_URL=http://modelapp:8000/model
+    depends_on:
+      - db
+      - modelapp
+volumes:
+  pgdata:
